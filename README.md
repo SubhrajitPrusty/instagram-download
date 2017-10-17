@@ -15,7 +15,7 @@
 
 `$ git clone https://github.com/SubhrajitPrusty/instagram-download.git`
 
-**Navigate to the tweet-cli folder**
+**Navigate to the instagram-download folder**
 
 `$ cd instagram-download`
 
