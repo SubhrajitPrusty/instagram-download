@@ -7,7 +7,9 @@
 
 `$ sudo <package-manager> install python3-pip`
 
-`install geckodriver` from [geckodriver](https://github.com/mozilla/geckodriver/releases)
+Download `geckodriver` from [geckodriver](https://github.com/mozilla/geckodriver/releases)
+
+`$ sudo mv geckodriver /usr/bin/geckodriver`
 
 `$ pip install beautifulsoup4`
 
