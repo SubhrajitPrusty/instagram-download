@@ -1,17 +1,18 @@
 # Instagram Download
 
 
-## Install
-
-### Build from Source
+### Install
 
 **Install the dependencies**
+
+`$ sudo <package-manager> install python3-pip`
+
+`install geckodriver` from [geckodriver](https://github.com/mozilla/geckodriver/releases)
 
 `$ pip install beautifulsoup4`
 
 `$ pip install selenium`
 
-`install geckodriver` from [geckodriver](https://github.com/mozilla/geckodriver/releases)
 
 **Clone the source**
 
@@ -26,7 +27,6 @@
 `$ python3 instagram.py`
 
 
-**_Note: Requires Python 3.x_**
 
 ## Usage
 
