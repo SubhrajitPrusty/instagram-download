@@ -11,6 +11,8 @@
 
 `$ pip install selenium`
 
+`install geckodriver` from [geckodriver](https://github.com/mozilla/geckodriver/releases)
+
 **Clone the source**
 
 `$ git clone https://github.com/SubhrajitPrusty/instagram-download.git`
