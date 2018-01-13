@@ -2,22 +2,22 @@
 
 import os
 from bs4 import BeautifulSoup as bs4
-from selenium import webdriver
+from splinter import Browser
 
 username = input("Enter username (must be public) : ")
 link = "https://www.instagram.com/"+username
 
-browser = webdriver.Firefox(executable_path="/usr/bin/geckodriver")
+if os.name == "posix":
+	geckodriver_path = "./geckodriver/geckodriver"
+else:
+	geckodriver_path = "./geckodriver/geckodriver.exe"
 
-browser.get(link)
-
-html = browser.page_source
-soup = bs4(html,"lxml")
-browser.close()
-
+with Browser("firefox",headless=True, executable_path=geckodriver_path) as browser:
+	browser.visit(link)
+	html = browser.html
+	soup = bs4(html,"html.parser")
 
 data = soup.findAll("img")
 for x in data:
-	jpg = x.get("src").split("?")[0].replace("/s640x640/sh0.08","")
-	print(jpg)
-	os.system("wget -c -N -P ./Images/"+username+" "+jpg)
+	x = x.get("src")
+	os.system("wget --no-check-certificate -c -N -P ./Images/"+username+" "+x)
