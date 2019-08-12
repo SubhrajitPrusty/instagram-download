@@ -1,2 +1,4 @@
 geckodriver.log
 Images/
+__pycache__
+*.egg-info

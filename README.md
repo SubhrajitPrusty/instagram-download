@@ -6,11 +6,11 @@ Download instagram photos of a user
 ```
 git clone https://github.com/SubhrajitPrusty/instagram-download
 cd instagram-download
-pip install --e .
+pip install -e .
 ```
 
 ## Usage
 
 ```
-insta-dl --help
+instagram-dl --help
 ```
